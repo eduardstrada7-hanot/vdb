@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #2C1810;
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8C97A;
+  --color-gold-dark: #A88830;
+  --color-blush: #F5E6E0;
+  --color-accent: #8B4513;
+  --color-brand-text: #1A1A1A;
+  --color-brand-bg: #FEFAF6;
+
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+:root {
+  --color-espresso: #2C1810;
+  --color-gold: #C9A84C;
+  --color-blush: #F5E6E0;
+  --color-accent: #8B4513;
+  --color-text: #1A1A1A;
+  --color-bg: #FEFAF6;
+  --color-gold-light: #E8C97A;
+  --color-gold-dark: #A88830;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-blush);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
+}
+
+/* Typography */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(44, 24, 16, 0.12);
+}
+
+/* Gold underline hover */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-gold);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Button transitions */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%);
+  color: white;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.05em;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 100%);
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1.5px solid var(--color-gold);
+  color: var(--color-gold);
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.05em;
+}
+.btn-secondary:hover {
+  background: var(--color-gold);
+  color: white;
+  box-shadow: 0 8px 24px rgba(201, 168, 76, 0.3);
+}
+
+/* Step transitions */
+.step-enter {
+  animation: stepEnter 0.4s ease forwards;
+}
+@keyframes stepEnter {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Section divider */
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-accent));
+  margin: 0 auto 1.5rem;
+}
