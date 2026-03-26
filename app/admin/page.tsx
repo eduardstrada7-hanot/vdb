@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function AdminPage() {
   return (
     <>
-      <section className="pt-28 pb-8 px-6 bg-[#2C1810] text-white">
+      <section className="pt-28 pb-8 px-6 bg-[#4A1A6B] text-white">
         <div className="max-w-7xl mx-auto flex items-start justify-between gap-4">
           <div>
             <p className="text-[#C9A84C] text-xs uppercase tracking-widest mb-2">Admin</p>
@@ -20,7 +20,7 @@ export default function AdminPage() {
           <LogoutButton />
         </div>
       </section>
-      <section className="py-10 px-6 bg-[#FEFAF6] min-h-screen">
+      <section className="py-10 px-6 bg-[#FAF5FE] min-h-screen">
         <div className="max-w-7xl mx-auto">
           <AdminDashboard />
         </div>

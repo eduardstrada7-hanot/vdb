@@ -13,7 +13,7 @@ function InstagramIcon({ size = 16, className = '' }: { size?: number; className
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2C1810] text-[#F5E6E0]">
+    <footer className="bg-[#4A1A6B] text-[#EDD9F5]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
@@ -24,10 +24,10 @@ export default function Footer() {
                 Velvet Bridal Makeovers
               </span>
             </div>
-            <p className="text-[#F5E6E0]/70 text-sm leading-relaxed mb-4">
+            <p className="text-[#EDD9F5]/70 text-sm leading-relaxed mb-4">
               Where Every Celebration Begins with Beauty
             </p>
-            <p className="text-[#F5E6E0]/60 text-xs leading-relaxed">
+            <p className="text-[#EDD9F5]/60 text-xs leading-relaxed">
               Luxury Indian Bridal &amp; Event Hair + Makeup by Divia
             </p>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[#F5E6E0]/70 hover:text-[#C9A84C] text-sm transition-colors"
+                    className="text-[#EDD9F5]/70 hover:text-[#C9A84C] text-sm transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -61,16 +61,16 @@ export default function Footer() {
                 href="https://www.instagram.com/velvet_bridal_makeovers"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-[#F5E6E0]/70 hover:text-[#C9A84C] text-sm transition-colors group"
+                className="flex items-center gap-3 text-[#EDD9F5]/70 hover:text-[#C9A84C] text-sm transition-colors group"
               >
                 <InstagramIcon size={16} className="group-hover:scale-110 transition-transform" />
                 @velvet_bridal_makeovers
               </a>
-              <div className="flex items-center gap-3 text-[#F5E6E0]/70 text-sm">
+              <div className="flex items-center gap-3 text-[#EDD9F5]/70 text-sm">
                 <MapPin size={16} className="text-[#C9A84C]" />
                 Serving the tri-state area &amp; beyond
               </div>
-              <div className="flex items-center gap-3 text-[#F5E6E0]/70 text-sm">
+              <div className="flex items-center gap-3 text-[#EDD9F5]/70 text-sm">
                 <Mail size={16} className="text-[#C9A84C]" />
                 Book via our online form
               </div>
@@ -78,11 +78,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#F5E6E0]/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#F5E6E0]/40 text-xs">
+        <div className="border-t border-[#EDD9F5]/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-[#EDD9F5]/40 text-xs">
             &copy; {new Date().getFullYear()} Velvet Bridal Makeovers. All rights reserved.
           </p>
-          <p className="text-[#F5E6E0]/40 text-xs">Crafted with love for Divia ✨</p>
+          <p className="text-[#EDD9F5]/40 text-xs">Crafted with love for Divia ✨</p>
         </div>
       </div>
     </footer>

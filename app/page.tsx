@@ -79,7 +79,7 @@ export default function HomePage() {
           loop
           playsInline
         />
-        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-[#4A1A6B]/55" />
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-80">
             <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
@@ -117,14 +117,14 @@ export default function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 px-6 lg:px-12 bg-[#FEFAF6]">
+      <section className="py-24 px-6 lg:px-12 bg-[#FAF5FE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="section-divider" />
-            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-4">
+            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A1A6B] mb-4">
               Every Look, Perfected
             </h2>
-            <p className="text-[#2C1810]/60 text-lg max-w-xl mx-auto">
+            <p className="text-[#4A1A6B]/60 text-lg max-w-xl mx-auto">
               From your first pre-wedding ritual to the grand reception, Divia crafts each look with intention and artistry.
             </p>
           </div>
@@ -132,15 +132,15 @@ export default function HomePage() {
             {services.map((svc) => (
               <div
                 key={svc.name}
-                className="card-lift bg-white border border-[#F5E6E0] rounded-2xl p-8 text-center group"
+                className="card-lift bg-white border border-[#EDD9F5] rounded-2xl p-8 text-center group"
               >
                 <div className="text-4xl mb-4">{svc.icon}</div>
-                <h3 className="font-playfair text-xl font-semibold text-[#2C1810] mb-3">
+                <h3 className="font-playfair text-xl font-semibold text-[#4A1A6B] mb-3">
                   {svc.name}
                 </h3>
-                <p className="text-[#2C1810]/60 text-sm leading-relaxed mb-6">{svc.desc}</p>
+                <p className="text-[#4A1A6B]/60 text-sm leading-relaxed mb-6">{svc.desc}</p>
                 <Link href="/services">
-                  <span className="text-[#C9A84C] text-xs font-semibold uppercase tracking-widest hover:text-[#8B4513] transition-colors">
+                  <span className="text-[#C9A84C] text-xs font-semibold uppercase tracking-widest hover:text-[#C9729A] transition-colors">
                     Learn More →
                   </span>
                 </Link>
@@ -158,20 +158,20 @@ export default function HomePage() {
       </section>
 
       {/* About Divia */}
-      <section className="py-24 px-6 lg:px-12 bg-[#F5E6E0]/40">
+      <section className="py-24 px-6 lg:px-12 bg-[#EDD9F5]/40">
         <div className="max-w-5xl mx-auto text-center">
           <div className="section-divider" />
-          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-8">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A1A6B] mb-8">
             The Artist Behind the Magic
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#2C1810]/75 text-base md:text-lg leading-relaxed mb-6">
-              Hi, I&apos;m <strong className="text-[#2C1810]">Divia</strong> — a professional makeup and hair artist with a deep passion for South Asian beauty traditions. I believe every celebration deserves a look that&apos;s as unforgettable as the moment itself.
+            <p className="text-[#4A1A6B]/75 text-base md:text-lg leading-relaxed mb-6">
+              Hi, I&apos;m <strong className="text-[#4A1A6B]">Divia</strong> — a professional makeup and hair artist with a deep passion for South Asian beauty traditions. I believe every celebration deserves a look that&apos;s as unforgettable as the moment itself.
             </p>
-            <p className="text-[#2C1810]/75 text-base md:text-lg leading-relaxed mb-6">
+            <p className="text-[#4A1A6B]/75 text-base md:text-lg leading-relaxed mb-6">
               With years of experience in Indian bridal makeovers, I blend timeless tradition with contemporary elegance. Whether you envision a classic bridal look rooted in your heritage or a modern fusion that turns heads, I bring your vision to life — with warmth, precision, and love.
             </p>
-            <p className="text-[#2C1810]/75 text-base md:text-lg leading-relaxed mb-10">
+            <p className="text-[#4A1A6B]/75 text-base md:text-lg leading-relaxed mb-10">
               From intimate haldi ceremonies to grand reception galas, every client deserves to feel like the most radiant version of themselves. That&apos;s my promise to you.
             </p>
             <Link href="/book">
@@ -185,11 +185,11 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-6 lg:px-12 bg-[#FEFAF6]">
+      <section className="py-24 px-6 lg:px-12 bg-[#FAF5FE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="section-divider" />
-            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-4">
+            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A1A6B] mb-4">
               Brides Are Saying
             </h2>
           </div>
@@ -197,18 +197,18 @@ export default function HomePage() {
             {testimonials.map((t) => (
               <div
                 key={t.name}
-                className="card-lift bg-white border border-[#F5E6E0] rounded-2xl p-8"
+                className="card-lift bg-white border border-[#EDD9F5] rounded-2xl p-8"
               >
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, i) => (
                     <Star key={i} size={14} fill="#C9A84C" className="text-[#C9A84C]" />
                   ))}
                 </div>
-                <p className="text-[#2C1810]/70 text-sm leading-relaxed mb-6 italic">
+                <p className="text-[#4A1A6B]/70 text-sm leading-relaxed mb-6 italic">
                   &ldquo;{t.text}&rdquo;
                 </p>
                 <div>
-                  <p className="font-semibold text-[#2C1810] text-sm">{t.name}</p>
+                  <p className="font-semibold text-[#4A1A6B] text-sm">{t.name}</p>
                   <p className="text-[#C9A84C] text-xs mt-1">{t.event}</p>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default function HomePage() {
       </section>
 
       {/* Instagram Section */}
-      <section className="py-24 px-6 lg:px-12 bg-[#2C1810]">
+      <section className="py-24 px-6 lg:px-12 bg-[#4A1A6B]">
         <div className="max-w-4xl mx-auto text-center">
           <Sparkles size={24} className="text-[#C9A84C] mx-auto mb-6" />
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
@@ -240,13 +240,13 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6 lg:px-12 bg-gradient-to-br from-[#F5E6E0] to-[#FEFAF6]">
+      <section className="py-24 px-6 lg:px-12 bg-gradient-to-br from-[#EDD9F5] to-[#FAF5FE]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="section-divider" />
-          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A1A6B] mb-6">
             Your Dream Look Awaits
           </h2>
-          <p className="text-[#2C1810]/65 text-base md:text-lg leading-relaxed mb-10">
+          <p className="text-[#4A1A6B]/65 text-base md:text-lg leading-relaxed mb-10">
             Every celebration deserves to begin with beauty. Let&apos;s create something extraordinary together.
           </p>
           <Link href="/book">

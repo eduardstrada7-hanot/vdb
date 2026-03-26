@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-espresso: #2C1810;
+  --color-espresso: #4A1A6B;
   --color-gold: #C9A84C;
   --color-gold-light: #E8C97A;
   --color-gold-dark: #A88830;
-  --color-blush: #F5E6E0;
-  --color-accent: #8B4513;
+  --color-blush: #EDD9F5;
+  --color-accent: #C9729A;
   --color-brand-text: #1A1A1A;
-  --color-brand-bg: #FEFAF6;
+  --color-brand-bg: #FAF5FE;
 
   --font-playfair: 'Playfair Display', serif;
   --font-inter: 'Inter', sans-serif;
 }
 
 :root {
-  --color-espresso: #2C1810;
+  --color-espresso: #4A1A6B;
   --color-gold: #C9A84C;
-  --color-blush: #F5E6E0;
-  --color-accent: #8B4513;
+  --color-blush: #EDD9F5;
+  --color-accent: #C9729A;
   --color-text: #1A1A1A;
-  --color-bg: #FEFAF6;
+  --color-bg: #FAF5FE;
   --color-gold-light: #E8C97A;
   --color-gold-dark: #A88830;
 }
@@ -61,7 +61,7 @@ body {
 }
 .card-lift:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(44, 24, 16, 0.12);
+  box-shadow: 0 20px 40px rgba(74, 26, 107, 0.12);
 }
 
 /* Gold underline hover */

@@ -100,7 +100,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 md:pt-36 pb-20 px-6 lg:px-12 bg-gradient-to-br from-[#2C1810] to-[#3d2218] text-white text-center">
+      <section className="pt-28 md:pt-36 pb-20 px-6 lg:px-12 bg-gradient-to-br from-[#4A1A6B] to-[#6B2D9A] text-white text-center">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-60">
             <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
@@ -118,7 +118,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 px-6 lg:px-12 bg-[#FEFAF6]">
+      <section className="py-24 px-6 lg:px-12 bg-[#FAF5FE]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((svc) => (
@@ -126,8 +126,8 @@ export default function ServicesPage() {
                 key={svc.name}
                 className={`card-lift rounded-2xl p-8 flex flex-col ${
                   svc.highlight
-                    ? 'bg-[#2C1810] text-white border-2 border-[#C9A84C]'
-                    : 'bg-white border border-[#F5E6E0]'
+                    ? 'bg-[#4A1A6B] text-white border-2 border-[#C9A84C]'
+                    : 'bg-white border border-[#EDD9F5]'
                 }`}
               >
                 <div className="text-4xl mb-4">{svc.emoji}</div>
@@ -138,14 +138,14 @@ export default function ServicesPage() {
                 )}
                 <h2
                   className={`font-playfair text-xl font-semibold mb-3 ${
-                    svc.highlight ? 'text-white' : 'text-[#2C1810]'
+                    svc.highlight ? 'text-white' : 'text-[#4A1A6B]'
                   }`}
                 >
                   {svc.name}
                 </h2>
                 <p
                   className={`text-sm leading-relaxed flex-1 mb-6 ${
-                    svc.highlight ? 'text-white/70' : 'text-[#2C1810]/60'
+                    svc.highlight ? 'text-white/70' : 'text-[#4A1A6B]/60'
                   }`}
                 >
                   {svc.description}
@@ -162,12 +162,12 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 lg:px-12 bg-[#F5E6E0]/60 text-center">
+      <section className="py-20 px-6 lg:px-12 bg-[#EDD9F5]/60 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#2C1810] mb-4">
+          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#4A1A6B] mb-4">
             Not sure which service is right for you?
           </h2>
-          <p className="text-[#2C1810]/65 text-base md:text-lg mb-8">
+          <p className="text-[#4A1A6B]/65 text-base md:text-lg mb-8">
             Send a booking request and Divia will reach out to discuss the perfect look for your celebration.
           </p>
           <Link href="/book">

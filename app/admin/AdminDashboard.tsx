@@ -86,8 +86,8 @@ export default function AdminDashboard() {
             onClick={() => setFilter(s)}
             className={`px-5 py-2 rounded-full text-sm font-medium capitalize transition-all ${
               filter === s
-                ? 'bg-[#2C1810] text-white'
-                : 'bg-white border border-[#F5E6E0] text-[#2C1810]/60 hover:border-[#C9A84C]/50'
+                ? 'bg-[#4A1A6B] text-white'
+                : 'bg-white border border-[#EDD9F5] text-[#4A1A6B]/60 hover:border-[#C9A84C]/50'
             }`}
           >
             {s} {counts[s] !== undefined ? `(${counts[s]})` : ''}
@@ -95,7 +95,7 @@ export default function AdminDashboard() {
         ))}
         <button
           onClick={fetchBookings}
-          className="ml-auto flex items-center gap-2 text-[#2C1810]/50 text-sm hover:text-[#C9A84C] transition-colors"
+          className="ml-auto flex items-center gap-2 text-[#4A1A6B]/50 text-sm hover:text-[#C9A84C] transition-colors"
         >
           <RefreshCw size={14} />
           Refresh
@@ -104,19 +104,19 @@ export default function AdminDashboard() {
 
       {/* Table */}
       {loading ? (
-        <div className="text-center py-20 text-[#2C1810]/40">Loading bookings...</div>
+        <div className="text-center py-20 text-[#4A1A6B]/40">Loading bookings...</div>
       ) : filtered.length === 0 ? (
-        <div className="text-center py-20 text-[#2C1810]/40">No bookings found.</div>
+        <div className="text-center py-20 text-[#4A1A6B]/40">No bookings found.</div>
       ) : (
-        <div className="bg-white rounded-2xl border border-[#F5E6E0] overflow-hidden">
+        <div className="bg-white rounded-2xl border border-[#EDD9F5] overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-[#F5E6E0] bg-[#FEFAF6]">
+                <tr className="border-b border-[#EDD9F5] bg-[#FAF5FE]">
                   {['Client', 'Event', 'Date', 'Duration', 'Submitted', 'Status', ''].map((h) => (
                     <th
                       key={h}
-                      className="text-left px-3 sm:px-6 py-3 sm:py-4 text-xs font-semibold uppercase tracking-widest text-[#2C1810]/40"
+                      className="text-left px-3 sm:px-6 py-3 sm:py-4 text-xs font-semibold uppercase tracking-widest text-[#4A1A6B]/40"
                     >
                       {h}
                     </th>
@@ -127,18 +127,18 @@ export default function AdminDashboard() {
                 {filtered.map((b) => (
                   <tr
                     key={b.id}
-                    className="border-b border-[#F5E6E0]/50 last:border-0 hover:bg-[#FEFAF6]/70 transition-colors"
+                    className="border-b border-[#EDD9F5]/50 last:border-0 hover:bg-[#FAF5FE]/70 transition-colors"
                   >
                     <td className="px-3 sm:px-6 py-2 sm:py-4">
-                      <p className="font-semibold text-[#2C1810] text-sm">{b.clientName}</p>
-                      <p className="text-[#2C1810]/40 text-xs">{b.clientEmail}</p>
+                      <p className="font-semibold text-[#4A1A6B] text-sm">{b.clientName}</p>
+                      <p className="text-[#4A1A6B]/40 text-xs">{b.clientEmail}</p>
                     </td>
-                    <td className="px-6 py-4 text-sm text-[#2C1810]">{b.eventType}</td>
-                    <td className="px-6 py-4 text-sm text-[#2C1810]">
+                    <td className="px-6 py-4 text-sm text-[#4A1A6B]">{b.eventType}</td>
+                    <td className="px-6 py-4 text-sm text-[#4A1A6B]">
                       {format(new Date(b.eventDate), 'MMM d, yyyy')}
                     </td>
-                    <td className="px-6 py-4 text-sm text-[#2C1810]/60">{b.eventDuration}</td>
-                    <td className="px-6 py-4 text-xs text-[#2C1810]/40">
+                    <td className="px-6 py-4 text-sm text-[#4A1A6B]/60">{b.eventDuration}</td>
+                    <td className="px-6 py-4 text-xs text-[#4A1A6B]/40">
                       {format(new Date(b.createdAt), 'MMM d, h:mm a')}
                     </td>
                     <td className="px-3 sm:px-6 py-2 sm:py-4">
@@ -167,18 +167,18 @@ export default function AdminDashboard() {
       {selected && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-            <div className="sticky top-0 bg-white border-b border-[#F5E6E0] px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between rounded-t-3xl">
+            <div className="sticky top-0 bg-white border-b border-[#EDD9F5] px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between rounded-t-3xl">
               <div>
-                <h3 className="font-playfair text-xl font-semibold text-[#2C1810]">
+                <h3 className="font-playfair text-xl font-semibold text-[#4A1A6B]">
                   {selected.clientName}
                 </h3>
-                <p className="text-[#2C1810]/40 text-xs">{selected.id}</p>
+                <p className="text-[#4A1A6B]/40 text-xs">{selected.id}</p>
               </div>
               <div className="flex items-center gap-3">
                 <Badge status={selected.status} />
                 <button
                   onClick={() => setSelected(null)}
-                  className="text-[#2C1810]/40 hover:text-[#2C1810] transition-colors"
+                  className="text-[#4A1A6B]/40 hover:text-[#4A1A6B] transition-colors"
                 >
                   <X size={20} />
                 </button>
@@ -196,20 +196,20 @@ export default function AdminDashboard() {
                 ['Guests', selected.guestCount?.toString() || '—'],
               ].map(([label, value]) => (
                 <div key={label} className="flex justify-between gap-4 flex-wrap">
-                  <span className="text-[#2C1810]/40 uppercase tracking-widest text-xs">{label}</span>
-                  <span className="text-[#2C1810] font-medium">{value}</span>
+                  <span className="text-[#4A1A6B]/40 uppercase tracking-widest text-xs">{label}</span>
+                  <span className="text-[#4A1A6B] font-medium">{value}</span>
                 </div>
               ))}
 
               {selected.notes && (
-                <div className="pt-3 border-t border-[#F5E6E0]">
-                  <p className="text-[#2C1810]/40 text-xs uppercase tracking-widest mb-2">Client Notes</p>
-                  <p className="text-[#2C1810]/70">{selected.notes}</p>
+                <div className="pt-3 border-t border-[#EDD9F5]">
+                  <p className="text-[#4A1A6B]/40 text-xs uppercase tracking-widest mb-2">Client Notes</p>
+                  <p className="text-[#4A1A6B]/70">{selected.notes}</p>
                 </div>
               )}
 
-              <div className="pt-3 border-t border-[#F5E6E0]">
-                <label className="block text-[#2C1810]/40 text-xs uppercase tracking-widest mb-2">
+              <div className="pt-3 border-t border-[#EDD9F5]">
+                <label className="block text-[#4A1A6B]/40 text-xs uppercase tracking-widest mb-2">
                   Admin Notes
                 </label>
                 <textarea
@@ -217,7 +217,7 @@ export default function AdminDashboard() {
                   onChange={(e) => setAdminNotes(e.target.value)}
                   placeholder="Add notes about this booking..."
                   rows={3}
-                  className="w-full border border-[#F5E6E0] rounded-xl px-4 py-3 text-[#2C1810] text-sm focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 focus:border-[#C9A84C] resize-none"
+                  className="w-full border border-[#EDD9F5] rounded-xl px-4 py-3 text-[#4A1A6B] text-sm focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 focus:border-[#C9A84C] resize-none"
                 />
               </div>
             </div>

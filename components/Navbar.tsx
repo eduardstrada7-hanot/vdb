@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#FEFAF6]/95 backdrop-blur-md shadow-sm border-b border-[#F5E6E0]'
+          ? 'bg-[#FAF5FE]/95 backdrop-blur-md shadow-sm border-b border-[#EDD9F5]'
           : 'bg-transparent'
       }`}
     >
@@ -39,7 +39,7 @@ export default function Navbar() {
             />
             <span
               className="font-playfair text-lg font-semibold tracking-wide"
-              style={{ color: scrolled ? '#2C1810' : 'white' }}
+              style={{ color: scrolled ? '#4A1A6B' : 'white' }}
             >
               Velvet Bridal Makeovers
             </span>
@@ -62,7 +62,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`nav-link text-sm font-medium tracking-wide transition-colors ${
                     scrolled
-                      ? 'text-[#2C1810] hover:text-[#C9A84C]'
+                      ? 'text-[#4A1A6B] hover:text-[#C9A84C]'
                       : 'text-white/90 hover:text-[#C9A84C]'
                   }`}
                 >
@@ -79,16 +79,16 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             {open ? (
-              <X size={24} className={scrolled ? 'text-[#2C1810]' : 'text-white'} />
+              <X size={24} className={scrolled ? 'text-[#4A1A6B]' : 'text-white'} />
             ) : (
-              <Menu size={24} className={scrolled ? 'text-[#2C1810]' : 'text-white'} />
+              <Menu size={24} className={scrolled ? 'text-[#4A1A6B]' : 'text-white'} />
             )}
           </button>
         </div>
 
         {/* Mobile menu */}
         {open && (
-          <div className="md:hidden bg-[#FEFAF6] border-t border-[#F5E6E0] py-6 px-4 space-y-4">
+          <div className="md:hidden bg-[#FAF5FE] border-t border-[#EDD9F5] py-6 px-4 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -97,7 +97,7 @@ export default function Navbar() {
                 className={`block text-sm font-medium tracking-wide py-2 ${
                   link.highlight
                     ? 'text-[#C9A84C] font-semibold'
-                    : 'text-[#2C1810] hover:text-[#C9A84C]'
+                    : 'text-[#4A1A6B] hover:text-[#C9A84C]'
                 }`}
               >
                 {link.label}

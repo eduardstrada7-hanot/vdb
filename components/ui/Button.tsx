@@ -25,7 +25,7 @@ export default function Button({
     primary: 'btn-primary text-white font-medium rounded-full',
     secondary: 'btn-secondary font-medium rounded-full bg-transparent',
     ghost:
-      'text-[#2C1810] hover:text-[#C9A84C] hover:bg-[#F5E6E0] font-medium rounded-full transition-colors',
+      'text-[#4A1A6B] hover:text-[#C9A84C] hover:bg-[#EDD9F5] font-medium rounded-full transition-colors',
   }
 
   return (
