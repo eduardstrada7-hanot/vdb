@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { MapPin, Mail } from 'lucide-react'
@@ -19,7 +21,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-3 mb-4 group">
+            <Link href="/" className="flex items-center gap-3 mb-4 group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Image src="/logo.jpeg" alt="Velvet Bridal Makeovers" width={48} height={48} className="rounded-full object-cover group-hover:scale-105 transition-transform duration-300" />
               <span className="font-playfair text-xl font-semibold text-[#4A1A6B]">
                 Velvet Bridal Makeovers
