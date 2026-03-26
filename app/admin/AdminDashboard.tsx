@@ -87,7 +87,7 @@ export default function AdminDashboard() {
             className={`px-5 py-2 rounded-full text-sm font-medium capitalize transition-all ${
               filter === s
                 ? 'bg-[#4A1A6B] text-white'
-                : 'bg-white border border-[#EDD9F5] text-[#4A1A6B]/60 hover:border-[#C9A84C]/50'
+                : 'bg-white border border-[#E4D0F5] text-[#4A1A6B]/60 hover:border-[#C9A84C]/50'
             }`}
           >
             {s} {counts[s] !== undefined ? `(${counts[s]})` : ''}
@@ -108,11 +108,11 @@ export default function AdminDashboard() {
       ) : filtered.length === 0 ? (
         <div className="text-center py-20 text-[#4A1A6B]/40">No bookings found.</div>
       ) : (
-        <div className="bg-white rounded-2xl border border-[#EDD9F5] overflow-hidden">
+        <div className="bg-white rounded-2xl border border-[#E4D0F5] overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="border-b border-[#EDD9F5] bg-[#FAF5FE]">
+                <tr className="border-b border-[#E4D0F5] bg-[#F3EAFF]">
                   {['Client', 'Event', 'Date', 'Duration', 'Submitted', 'Status', ''].map((h) => (
                     <th
                       key={h}
@@ -127,7 +127,7 @@ export default function AdminDashboard() {
                 {filtered.map((b) => (
                   <tr
                     key={b.id}
-                    className="border-b border-[#EDD9F5]/50 last:border-0 hover:bg-[#FAF5FE]/70 transition-colors"
+                    className="border-b border-[#E4D0F5]/50 last:border-0 hover:bg-[#F3EAFF]/70 transition-colors"
                   >
                     <td className="px-3 sm:px-6 py-2 sm:py-4">
                       <p className="font-semibold text-[#4A1A6B] text-sm">{b.clientName}</p>
@@ -167,7 +167,7 @@ export default function AdminDashboard() {
       {selected && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-            <div className="sticky top-0 bg-white border-b border-[#EDD9F5] px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between rounded-t-3xl">
+            <div className="sticky top-0 bg-white border-b border-[#E4D0F5] px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between rounded-t-3xl">
               <div>
                 <h3 className="font-playfair text-xl font-semibold text-[#4A1A6B]">
                   {selected.clientName}
@@ -202,13 +202,13 @@ export default function AdminDashboard() {
               ))}
 
               {selected.notes && (
-                <div className="pt-3 border-t border-[#EDD9F5]">
+                <div className="pt-3 border-t border-[#E4D0F5]">
                   <p className="text-[#4A1A6B]/40 text-xs uppercase tracking-widest mb-2">Client Notes</p>
                   <p className="text-[#4A1A6B]/70">{selected.notes}</p>
                 </div>
               )}
 
-              <div className="pt-3 border-t border-[#EDD9F5]">
+              <div className="pt-3 border-t border-[#E4D0F5]">
                 <label className="block text-[#4A1A6B]/40 text-xs uppercase tracking-widest mb-2">
                   Admin Notes
                 </label>
@@ -217,7 +217,7 @@ export default function AdminDashboard() {
                   onChange={(e) => setAdminNotes(e.target.value)}
                   placeholder="Add notes about this booking..."
                   rows={3}
-                  className="w-full border border-[#EDD9F5] rounded-xl px-4 py-3 text-[#4A1A6B] text-sm focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 focus:border-[#C9A84C] resize-none"
+                  className="w-full border border-[#E4D0F5] rounded-xl px-4 py-3 text-[#4A1A6B] text-sm focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 focus:border-[#C9A84C] resize-none"
                 />
               </div>
             </div>

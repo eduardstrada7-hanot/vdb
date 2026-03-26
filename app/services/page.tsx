@@ -132,7 +132,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 px-6 lg:px-12 bg-[#FAF5FE]">
+      <section className="py-24 px-6 lg:px-12 bg-[#F3EAFF]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((svc) => (
@@ -141,7 +141,7 @@ export default function ServicesPage() {
                 className={`card-lift rounded-2xl p-8 flex flex-col ${
                   svc.highlight
                     ? 'bg-[#4A1A6B] text-white border-2 border-[#C9A84C]'
-                    : 'bg-white border border-[#EDD9F5]'
+                    : 'bg-white border border-[#E4D0F5]'
                 }`}
               >
                 <div className="text-4xl mb-4">{svc.emoji}</div>
@@ -176,7 +176,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 px-6 lg:px-12 bg-[#EDD9F5]/60 text-center">
+      <section className="py-20 px-6 lg:px-12 bg-[#E4D0F5]/60 text-center">
         <div className="max-w-2xl mx-auto">
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#4A1A6B] mb-4">
             Not sure which service is right for you?

@@ -119,7 +119,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Preview */}
-      <section className="py-24 px-6 lg:px-12 bg-[#FAF5FE]">
+      <section className="py-24 px-6 lg:px-12 bg-[#F3EAFF]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="section-divider" />
@@ -134,7 +134,7 @@ export default function HomePage() {
             {services.map((svc) => (
               <div
                 key={svc.name}
-                className="card-lift bg-white border border-[#EDD9F5] rounded-2xl p-8 text-center group"
+                className="card-lift bg-white border border-[#E4D0F5] rounded-2xl p-8 text-center group"
               >
                 <div className="text-4xl mb-4">{svc.icon}</div>
                 <h3 className="font-playfair text-xl font-semibold text-[#4A1A6B] mb-3">
@@ -160,7 +160,7 @@ export default function HomePage() {
       </section>
 
       {/* About Divya */}
-      <section className="py-24 px-6 lg:px-12 bg-[#EDD9F5]/40">
+      <section className="py-24 px-6 lg:px-12 bg-[#E4D0F5]/40">
         <div className="max-w-5xl mx-auto text-center">
           <div className="section-divider" />
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A1A6B] mb-8">
@@ -187,7 +187,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 px-6 lg:px-12 bg-[#FAF5FE]">
+      <section className="py-24 px-6 lg:px-12 bg-[#F3EAFF]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="section-divider" />
@@ -199,7 +199,7 @@ export default function HomePage() {
             {testimonials.map((t) => (
               <div
                 key={t.name}
-                className="card-lift bg-white border border-[#EDD9F5] rounded-2xl p-8"
+                className="card-lift bg-white border border-[#E4D0F5] rounded-2xl p-8"
               >
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: t.rating }).map((_, i) => (
@@ -242,7 +242,7 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6 lg:px-12 bg-gradient-to-br from-[#EDD9F5] to-[#FAF5FE]">
+      <section className="py-24 px-6 lg:px-12 bg-gradient-to-br from-[#E4D0F5] to-[#F3EAFF]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="section-divider" />
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#4A1A6B] mb-6">

@@ -5,10 +5,10 @@
   --color-gold: #C9A84C;
   --color-gold-light: #E8C97A;
   --color-gold-dark: #A88830;
-  --color-blush: #EDD9F5;
+  --color-blush: #E4D0F5;
   --color-accent: #C9729A;
   --color-brand-text: #1A1A1A;
-  --color-brand-bg: #FAF5FE;
+  --color-brand-bg: #F3EAFF;
 
   --font-playfair: 'Playfair Display', serif;
   --font-inter: 'Inter', sans-serif;
@@ -17,10 +17,10 @@
 :root {
   --color-espresso: #4A1A6B;
   --color-gold: #C9A84C;
-  --color-blush: #EDD9F5;
+  --color-blush: #E4D0F5;
   --color-accent: #C9729A;
   --color-text: #1A1A1A;
-  --color-bg: #FAF5FE;
+  --color-bg: #F3EAFF;
   --color-gold-light: #E8C97A;
   --color-gold-dark: #A88830;
 }

@@ -20,7 +20,7 @@ export default function AdminPage() {
           <LogoutButton />
         </div>
       </section>
-      <section className="py-10 px-6 bg-[#FAF5FE] min-h-screen">
+      <section className="py-10 px-6 bg-[#F3EAFF] min-h-screen">
         <div className="max-w-7xl mx-auto">
           <AdminDashboard />
         </div>
