@@ -114,18 +114,18 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-28 md:pt-36 pb-20 px-6 lg:px-12 bg-gradient-to-br from-[#4A1A6B] to-[#6B2D9A] text-white text-center">
+      <section className="pt-28 md:pt-36 pb-20 px-6 lg:px-12 bg-gradient-to-br from-[#EDE3F7] to-[#F3EAFF] text-center">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-60">
             <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
             <span className="text-[#C9A84C] text-xs tracking-widest uppercase">Our Services</span>
             <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
           </div>
-          <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-[#4A1A6B] mb-6">
             Every Look,{' '}
             <em className="text-[#C9A84C]">Perfected</em>
           </h1>
-          <p className="text-white/65 text-base md:text-lg leading-relaxed">
+          <p className="text-[#4A1A6B]/65 text-base md:text-lg leading-relaxed">
             From your first pre-wedding ritual to the grand reception gala, Divya crafts each look with deep knowledge of South Asian beauty traditions and contemporary artistry.
           </p>
         </div>
@@ -140,7 +140,7 @@ export default function ServicesPage() {
                 key={svc.name}
                 className={`card-lift rounded-2xl p-8 flex flex-col ${
                   svc.highlight
-                    ? 'bg-[#4A1A6B] text-white border-2 border-[#C9A84C]'
+                    ? 'bg-[#D4B8F0] border-2 border-[#C9A84C]'
                     : 'bg-white border border-[#E4D0F5]'
                 }`}
               >
@@ -150,16 +150,12 @@ export default function ServicesPage() {
                     Most Popular
                   </span>
                 )}
-                <h2
-                  className={`font-playfair text-xl font-semibold mb-3 ${
-                    svc.highlight ? 'text-white' : 'text-[#4A1A6B]'
-                  }`}
-                >
+                <h2 className="font-playfair text-xl font-semibold mb-3 text-[#4A1A6B]">
                   {svc.name}
                 </h2>
                 <p
                   className={`text-sm leading-relaxed flex-1 mb-6 ${
-                    svc.highlight ? 'text-white/70' : 'text-[#4A1A6B]/60'
+                    svc.highlight ? 'text-[#4A1A6B]/70' : 'text-[#4A1A6B]/60'
                   }`}
                 >
                   {svc.description}

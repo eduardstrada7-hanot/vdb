@@ -81,7 +81,7 @@ export default function HomePage() {
           loop
           playsInline
         />
-        <div className="absolute inset-0 bg-[#4A1A6B]/55" />
+        <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-80">
             <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
@@ -220,13 +220,13 @@ export default function HomePage() {
       </section>
 
       {/* Instagram Section */}
-      <section className="py-24 px-6 lg:px-12 bg-[#4A1A6B]">
+      <section className="py-24 px-6 lg:px-12 bg-[#EDE3F7]">
         <div className="max-w-4xl mx-auto text-center">
           <Sparkles size={24} className="text-[#C9A84C] mx-auto mb-6" />
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#4A1A6B] mb-4">
             Follow the Journey
           </h2>
-          <p className="text-white/60 text-base md:text-lg mb-8">
+          <p className="text-[#4A1A6B]/60 text-base md:text-lg mb-8">
             Catch behind-the-scenes artistry, real bride transformations, and daily beauty inspiration.
           </p>
           <a
