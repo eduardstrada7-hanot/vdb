@@ -16,13 +16,13 @@ function InstagramIcon({ size = 20 }: { size?: number }) {
 export const metadata: Metadata = {
   title: 'Velvet Bridal Makeovers | Indian Bridal Makeup & Hair Artist',
   description:
-    'Luxury Indian bridal makeup and hair by Divia. Where Every Celebration Begins with Beauty. Serving the tri-state area.',
+    'Luxury Indian bridal makeup and hair by Divya. Where Every Celebration Begins with Beauty. Serving the tri-state area.',
   alternates: { canonical: '/' },
 }
 
 const services = [
   { icon: '👰', name: 'Bridal Makeover', desc: 'Full wedding day hair & makeup, traditional or fusion looks' },
-  { icon: '🌿', name: 'Mehndi Night', desc: 'Festive glam for the pre-wedding henna ceremony' },
+  { icon: '🌿', name: 'Mehandi Night', desc: 'Festive glam for the pre-wedding henna ceremony' },
   { icon: '✨', name: 'Sangeet Night', desc: 'Glitzy, high-energy look for the music & dance celebration' },
   { icon: '🌸', name: 'Haldi Ceremony', desc: 'Natural, dewy glow for the turmeric ritual' },
   { icon: '💍', name: 'Engagement', desc: 'Elegant look for the ring ceremony & family gathering' },
@@ -33,19 +33,19 @@ const testimonials = [
   {
     name: 'Priya S.',
     event: 'Bridal Makeover',
-    text: 'Divia is an absolute artist. She understood my vision perfectly and made me feel like royalty on my wedding day. Every guest was in awe!',
+    text: 'Divya is an absolute artist. She understood my vision perfectly and made me feel like royalty on my wedding day. Every guest was in awe!',
     rating: 5,
   },
   {
     name: 'Ananya R.',
     event: 'Sangeet & Reception',
-    text: 'I booked Divia for both my sangeet and reception. Two completely different looks — both were absolutely flawless. She is truly gifted.',
+    text: 'I booked Divya for both my sangeet and reception. Two completely different looks — both were absolutely flawless. She is truly gifted.',
     rating: 5,
   },
   {
     name: 'Kavya M.',
-    event: 'Mehndi & Haldi',
-    text: "From the natural haldi glow to the vibrant mehndi look, Divia captured every emotion of my pre-wedding celebrations. I cried happy tears!",
+    event: 'Mehandi & Haldi',
+    text: "From the natural haldi glow to the vibrant mehandi look, Divya captured every emotion of my pre-wedding celebrations. I cried happy tears!",
     rating: 5,
   },
 ]
@@ -54,7 +54,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BeautySalon',
   name: 'Velvet Bridal Makeovers',
-  description: 'Luxury Indian bridal makeup and hair by Divia',
+  description: 'Luxury Indian bridal makeup and hair by Divya',
   url: 'https://velvetbridalmakeovers.com',
   sameAs: ['https://www.instagram.com/velvet_bridal_makeovers'],
   priceRange: '$$$$',
@@ -94,7 +94,7 @@ export default function HomePage() {
             Where Every Celebration Begins with Beauty
           </p>
           <p className="text-sm md:text-base tracking-wider opacity-70 mb-10">
-            Luxury Indian Bridal &amp; Event Hair + Makeup by Divia
+            Luxury Indian Bridal &amp; Event Hair + Makeup by Divya
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/book">
@@ -125,7 +125,7 @@ export default function HomePage() {
               Every Look, Perfected
             </h2>
             <p className="text-[#4A1A6B]/60 text-lg max-w-xl mx-auto">
-              From your first pre-wedding ritual to the grand reception, Divia crafts each look with intention and artistry.
+              From your first pre-wedding ritual to the grand reception, Divya crafts each look with intention and artistry.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -157,7 +157,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Divia */}
+      {/* About Divya */}
       <section className="py-24 px-6 lg:px-12 bg-[#EDD9F5]/40">
         <div className="max-w-5xl mx-auto text-center">
           <div className="section-divider" />
@@ -166,7 +166,7 @@ export default function HomePage() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#4A1A6B]/75 text-base md:text-lg leading-relaxed mb-6">
-              Hi, I&apos;m <strong className="text-[#4A1A6B]">Divia</strong> — a professional makeup and hair artist with a deep passion for South Asian beauty traditions. I believe every celebration deserves a look that&apos;s as unforgettable as the moment itself.
+              Hi, I&apos;m <strong className="text-[#4A1A6B]">Divya</strong> — a professional makeup and hair artist with a deep passion for South Asian beauty traditions. I believe every celebration deserves a look that&apos;s as unforgettable as the moment itself.
             </p>
             <p className="text-[#4A1A6B]/75 text-base md:text-lg leading-relaxed mb-6">
               With years of experience in Indian bridal makeovers, I blend timeless tradition with contemporary elegance. Whether you envision a classic bridal look rooted in your heritage or a modern fusion that turns heads, I bring your vision to life — with warmth, precision, and love.

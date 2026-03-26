@@ -5,7 +5,7 @@ import BookingForm from './BookingForm'
 export const metadata: Metadata = {
   title: 'Book Your Look',
   description:
-    'Request a booking with Divia for your wedding, sangeet, mehndi, or any special occasion. Luxury Indian bridal makeup and hair.',
+    'Request a booking with Divya for your wedding, sangeet, mehandi, or any special occasion. Luxury Indian bridal makeup and hair.',
   alternates: { canonical: '/book' },
 }
 
@@ -23,7 +23,7 @@ export default function BookPage() {
             Book Your <em className="text-[#C9A84C]">Look</em>
           </h1>
           <p className="text-white/65 text-base md:text-lg">
-            Complete the form below and Divia will personally reach out within 48 hours to confirm your booking.
+            Complete the form below and Divya will personally reach out within 48 hours to confirm your booking.
           </p>
         </div>
       </section>

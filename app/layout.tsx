@@ -22,20 +22,20 @@ export const metadata: Metadata = {
     template: '%s | Velvet Bridal Makeovers',
   },
   description:
-    'Luxury Indian bridal makeup and hair by Divia. Specializing in South Asian weddings, Sangeet, Mehndi, Haldi, Engagement, Reception, and all celebrations. Book your bridal look today.',
+    'Luxury Indian bridal makeup and hair by Divya. Specializing in South Asian weddings, Sangeet, Mehandi, Haldi, Engagement, Reception, and all celebrations. Book your bridal look today.',
   keywords: [
     'Indian bridal makeup',
     'South Asian bridal hair',
     'wedding makeup artist',
     'bridal makeover',
-    'mehndi makeup',
+    'mehandi makeup',
     'sangeet glam',
     'haldi look',
     'reception makeup',
     'Indian wedding beauty',
-    'Divia makeup artist',
+    'Divya makeup artist',
   ],
-  authors: [{ name: 'Divia — Velvet Bridal Makeovers' }],
+  authors: [{ name: 'Divya — Velvet Bridal Makeovers' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     siteName: 'Velvet Bridal Makeovers',
     title: 'Velvet Bridal Makeovers | Indian Bridal Makeup & Hair Artist',
     description:
-      'Luxury Indian bridal makeup and hair by Divia. Where Every Celebration Begins with Beauty.',
+      'Luxury Indian bridal makeup and hair by Divya. Where Every Celebration Begins with Beauty.',
     images: [
       {
         url: 'https://www.instagram.com/velvet_bridal_makeovers',
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Velvet Bridal Makeovers',
-    description: 'Luxury Indian Bridal & Event Hair + Makeup by Divia',
+    description: 'Luxury Indian Bridal & Event Hair + Makeup by Divya',
   },
   metadataBase: new URL('https://velvetbridalmakeovers.com'),
   alternates: {

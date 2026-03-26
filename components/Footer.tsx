@@ -28,7 +28,7 @@ export default function Footer() {
               Where Every Celebration Begins with Beauty
             </p>
             <p className="text-[#EDD9F5]/60 text-xs leading-relaxed">
-              Luxury Indian Bridal &amp; Event Hair + Makeup by Divia
+              Luxury Indian Bridal &amp; Event Hair + Makeup by Divya
             </p>
           </div>
 
@@ -82,7 +82,7 @@ export default function Footer() {
           <p className="text-[#EDD9F5]/40 text-xs">
             &copy; {new Date().getFullYear()} Velvet Bridal Makeovers. All rights reserved.
           </p>
-          <p className="text-[#EDD9F5]/40 text-xs">Crafted with love for Divia ✨</p>
+          <p className="text-[#EDD9F5]/40 text-xs">Crafted with love for Divya ✨</p>
         </div>
       </div>
     </footer>

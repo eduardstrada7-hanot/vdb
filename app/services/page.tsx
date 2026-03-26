@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button'
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    "Explore Divia's luxury hair and makeup services for Indian weddings and celebrations — Bridal, Mehndi, Sangeet, Haldi, Engagement, Reception, and more.",
+    "Explore Divya's luxury hair and makeup services for Indian weddings and celebrations — Bridal, Mehandi, Sangeet, Haldi, Engagement, Reception, and more.",
   alternates: { canonical: '/services' },
 }
 
@@ -14,14 +14,14 @@ const services = [
     emoji: '👰',
     name: 'Bridal Makeover',
     description:
-      'The ultimate wedding day transformation. Divia creates a stunning, long-lasting look that honors your heritage while reflecting your unique beauty — traditional, fusion, or modern.',
+      'The ultimate wedding day transformation. Divya creates a stunning, long-lasting look that honors your heritage while reflecting your unique beauty — traditional, fusion, or modern.',
     highlight: true,
   },
   {
     emoji: '🌿',
-    name: 'Mehndi Night',
+    name: 'Mehandi Night',
     description:
-      'Celebrate the ancient art of henna with a festive, vibrant glam look. Rich colors, dramatic eyes, and a look that complements your intricate mehndi patterns.',
+      'Celebrate the ancient art of henna with a festive, vibrant glam look. Rich colors, dramatic eyes, and a look that complements your intricate mehandi patterns.',
     highlight: false,
   },
   {
@@ -112,7 +112,7 @@ export default function ServicesPage() {
             <em className="text-[#C9A84C]">Perfected</em>
           </h1>
           <p className="text-white/65 text-base md:text-lg leading-relaxed">
-            From your first pre-wedding ritual to the grand reception gala, Divia crafts each look with deep knowledge of South Asian beauty traditions and contemporary artistry.
+            From your first pre-wedding ritual to the grand reception gala, Divya crafts each look with deep knowledge of South Asian beauty traditions and contemporary artistry.
           </p>
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function ServicesPage() {
             Not sure which service is right for you?
           </h2>
           <p className="text-[#4A1A6B]/65 text-base md:text-lg mb-8">
-            Send a booking request and Divia will reach out to discuss the perfect look for your celebration.
+            Send a booking request and Divya will reach out to discuss the perfect look for your celebration.
           </p>
           <Link href="/book">
             <Button size="lg" variant="primary">

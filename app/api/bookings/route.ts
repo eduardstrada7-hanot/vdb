@@ -50,7 +50,7 @@ Hi ${clientName},
 
 Thank you for reaching out to Velvet Bridal Makeovers!
 
-Your booking request has been received. Divia will personally review your request and call you within 48 hours to confirm availability and discuss your look.
+Your booking request has been received. Divya will personally review your request and call you within 48 hours to confirm availability and discuss your look.
 
 Booking Reference: ${booking.id}
 Event: ${eventType}
@@ -58,7 +58,7 @@ Date: ${new Date(eventDate).toLocaleDateString('en-US', { weekday: 'long', year:
 Duration: ${eventDuration}
 
 Where Every Celebration Begins with Beauty
-— Divia, Velvet Bridal Makeovers
+— Divya, Velvet Bridal Makeovers
 `)
 
     return NextResponse.json({ id: booking.id, status: booking.status }, { status: 201 })

@@ -8,7 +8,7 @@ import { CheckCircle, Calendar, User, FileText } from 'lucide-react'
 
 const EVENT_TYPES = [
   'Bridal Makeover',
-  'Mehndi Night',
+  'Mehandi Night',
   'Sangeet Night',
   'Haldi Ceremony',
   'Engagement Ceremony',
@@ -104,7 +104,7 @@ export default function BookingForm() {
             Request Received!
           </h2>
           <p className="text-[#2C1810]/70 text-lg mb-4">
-            Divia will call you within <strong>48 hours</strong> to confirm your booking details.
+            Divya will call you within <strong>48 hours</strong> to confirm your booking details.
           </p>
           <div className="bg-[#F5E6E0]/60 rounded-2xl p-6 mb-8">
             <p className="text-xs text-[#2C1810]/50 uppercase tracking-widest mb-1">Booking Reference</p>
@@ -286,7 +286,7 @@ export default function BookingForm() {
                   Special Requests <span className="normal-case text-[#2C1810]/30">(optional)</span>
                 </label>
                 <textarea
-                  placeholder="Tell Divia about your vision, inspiration, or any specific requirements..."
+                  placeholder="Tell Divya about your vision, inspiration, or any specific requirements..."
                   value={form.notes}
                   onChange={(e) => update('notes', e.target.value)}
                   rows={4}
@@ -356,7 +356,7 @@ export default function BookingForm() {
               <h3 className="font-semibold text-[#2C1810] text-sm uppercase tracking-widest mb-4">What happens next?</h3>
               <ol className="space-y-3">
                 {[
-                  'Divia personally reviews your booking request.',
+                  'Divya personally reviews your booking request.',
                   "She'll call you within 48 hours to confirm details & availability.",
                   'You receive a confirmation email once your booking is approved.',
                 ].map((item, i) => (
