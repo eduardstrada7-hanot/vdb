@@ -19,6 +19,9 @@ const EVENT_TYPES = [
   'Birthday & Special Occasions',
   'Prom & Formal Events',
   'Corporate Events & Headshots',
+  'Grihapravesh (House Warming)',
+  'Baby Shower Ceremony',
+  'Other',
 ]
 
 const DURATIONS = ['2 Hours', '4 Hours', '6 Hours', 'Full Day (8+ hrs)', 'Custom']

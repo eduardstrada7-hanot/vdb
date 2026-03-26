@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Menu, X, Sparkles } from 'lucide-react'
+import Image from 'next/image'
+import { Menu, X } from 'lucide-react'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -32,17 +33,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <Sparkles
-              size={18}
-              className="text-[#C9A84C] group-hover:rotate-12 transition-transform duration-300"
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/logo.jpeg"
+              alt="Velvet Bridal Makeovers"
+              width={56}
+              height={56}
+              className="rounded-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            <span
-              className="font-playfair text-lg font-semibold tracking-wide"
-              style={{ color: scrolled ? '#4A1A6B' : 'white' }}
-            >
-              Velvet Bridal Makeovers
-            </span>
           </Link>
 
           {/* Desktop links */}

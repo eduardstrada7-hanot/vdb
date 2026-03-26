@@ -94,6 +94,20 @@ const services = [
       'Clean, polished professional looks for corporate events, headshots, and business occasions. Confidence-boosting beauty that photographs impeccably.',
     highlight: false,
   },
+  {
+    emoji: '🏡',
+    name: 'Grihapravesh',
+    description:
+      'Celebrate your new home with a radiant, auspicious look for the house warming ceremony. Traditional elegance that honors this joyful milestone.',
+    highlight: false,
+  },
+  {
+    emoji: '🍼',
+    name: 'Baby Shower Ceremony',
+    description:
+      'Glow beautifully on this precious occasion. Soft, luminous looks perfect for celebrating the arrival of a new life with family and friends.',
+    highlight: false,
+  },
 ]
 
 export default function ServicesPage() {

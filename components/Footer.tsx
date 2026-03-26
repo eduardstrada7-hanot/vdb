@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { MapPin, Mail, Sparkles } from 'lucide-react'
+import Image from 'next/image'
+import { MapPin, Mail } from 'lucide-react'
 
 function InstagramIcon({ size = 16, className = '' }: { size?: number; className?: string }) {
   return (
@@ -18,8 +19,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Sparkles size={18} className="text-[#C9A84C]" />
+            <div className="flex items-center gap-3 mb-4">
+              <Image src="/logo.jpeg" alt="Velvet Bridal Makeovers" width={48} height={48} className="rounded-full object-cover" />
               <span className="font-playfair text-xl font-semibold text-white">
                 Velvet Bridal Makeovers
               </span>

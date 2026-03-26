@@ -27,6 +27,8 @@ const services = [
   { icon: '🌸', name: 'Haldi Ceremony', desc: 'Natural, dewy glow for the turmeric ritual' },
   { icon: '💍', name: 'Engagement', desc: 'Elegant look for the ring ceremony & family gathering' },
   { icon: '🥂', name: 'Reception Gala', desc: 'Sophisticated evening glamour for the post-wedding reception' },
+  { icon: '🏡', name: 'Grihapravesh', desc: 'Radiant, auspicious look for the house warming ceremony' },
+  { icon: '🍼', name: 'Baby Shower Ceremony', desc: 'Soft, luminous glam for celebrating a new arrival' },
 ]
 
 const testimonials = [
