@@ -7,9 +7,10 @@ declare global {
 }
 
 function createPrismaClient(): PrismaClient {
-  const dbUrl = process.env.DATABASE_URL ?? 'file:./dev.db'
-  const url = dbUrl.startsWith('file:') ? dbUrl : `file:${dbUrl}`
-  const adapter = new PrismaLibSql({ url })
+  const url = process.env.DATABASE_URL ?? 'file:./dev.db'
+  const authToken = process.env.TURSO_AUTH_TOKEN
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const adapter = new PrismaLibSql({ url, authToken } as any)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   return new PrismaClient({ adapter } as any)
 }

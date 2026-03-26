@@ -37,7 +37,7 @@ export default function AdminDashboard() {
     try {
       const res = await fetch('/api/bookings')
       const data = await res.json()
-      setBookings(data)
+      setBookings(Array.isArray(data) ? data : [])
     } catch {
       console.error('Failed to fetch bookings')
     } finally {
