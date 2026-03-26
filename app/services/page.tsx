@@ -100,18 +100,18 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-36 pb-20 px-6 lg:px-12 bg-gradient-to-br from-[#2C1810] to-[#3d2218] text-white text-center">
+      <section className="pt-28 md:pt-36 pb-20 px-6 lg:px-12 bg-gradient-to-br from-[#2C1810] to-[#3d2218] text-white text-center">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-60">
-            <div className="w-12 h-px bg-[#C9A84C]" />
+            <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
             <span className="text-[#C9A84C] text-xs tracking-widest uppercase">Our Services</span>
-            <div className="w-12 h-px bg-[#C9A84C]" />
+            <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
           </div>
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Every Look,{' '}
             <em className="text-[#C9A84C]">Perfected</em>
           </h1>
-          <p className="text-white/65 text-lg leading-relaxed">
+          <p className="text-white/65 text-base md:text-lg leading-relaxed">
             From your first pre-wedding ritual to the grand reception gala, Divia crafts each look with deep knowledge of South Asian beauty traditions and contemporary artistry.
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function ServicesPage() {
           <h2 className="font-playfair text-3xl md:text-4xl font-bold text-[#2C1810] mb-4">
             Not sure which service is right for you?
           </h2>
-          <p className="text-[#2C1810]/65 mb-8">
+          <p className="text-[#2C1810]/65 text-base md:text-lg mb-8">
             Send a booking request and Divia will reach out to discuss the perfect look for your celebration.
           </p>
           <Link href="/book">

@@ -97,8 +97,8 @@ export default function BookingForm() {
 
   if (success) {
     return (
-      <div className="max-w-2xl mx-auto text-center py-12">
-        <div className="bg-white rounded-3xl border border-[#F5E6E0] shadow-lg p-12">
+      <div className="max-w-2xl mx-auto text-center py-12 px-4">
+        <div className="bg-white rounded-3xl border border-[#F5E6E0] shadow-lg p-6 sm:p-12">
           <CheckCircle size={56} className="text-[#C9A84C] mx-auto mb-6" />
           <h2 className="font-playfair text-3xl font-bold text-[#2C1810] mb-4">
             Request Received!
@@ -126,13 +126,13 @@ export default function BookingForm() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl mx-auto px-0 sm:px-0">
       <StepIndicator steps={steps} currentStep={step} />
 
       <div className="bg-white rounded-3xl border border-[#F5E6E0] shadow-lg overflow-hidden">
         {/* Step 1 */}
         {step === 1 && (
-          <div className="p-8 md:p-12 step-enter">
+          <div className="p-5 sm:p-8 md:p-12 step-enter">
             <div className="flex items-center gap-3 mb-8">
               <Calendar size={22} className="text-[#C9A84C]" />
               <h2 className="font-playfair text-2xl font-semibold text-[#2C1810]">Your Event</h2>
@@ -239,7 +239,7 @@ export default function BookingForm() {
 
         {/* Step 2 */}
         {step === 2 && (
-          <div className="p-8 md:p-12 step-enter">
+          <div className="p-5 sm:p-8 md:p-12 step-enter">
             <div className="flex items-center gap-3 mb-8">
               <User size={22} className="text-[#C9A84C]" />
               <h2 className="font-playfair text-2xl font-semibold text-[#2C1810]">About You</h2>
@@ -317,7 +317,7 @@ export default function BookingForm() {
 
         {/* Step 3 */}
         {step === 3 && (
-          <div className="p-8 md:p-12 step-enter">
+          <div className="p-5 sm:p-8 md:p-12 step-enter">
             <div className="flex items-center gap-3 mb-8">
               <FileText size={22} className="text-[#C9A84C]" />
               <h2 className="font-playfair text-2xl font-semibold text-[#2C1810]">Review &amp; Submit</h2>
@@ -326,7 +326,7 @@ export default function BookingForm() {
             {/* Summary */}
             <div className="bg-[#FEFAF6] border border-[#F5E6E0] rounded-2xl p-6 mb-8 space-y-4">
               <h3 className="font-playfair text-lg font-semibold text-[#2C1810] mb-4">Your Booking Summary</h3>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm">
                 {[
                   ['Event Type', form.eventType],
                   ['Date', form.eventDate ? new Date(form.eventDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : ''],

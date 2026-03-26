@@ -70,7 +70,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[500px] sm:min-h-[600px] flex items-center justify-center overflow-hidden">
         <video
           className="absolute inset-0 w-full h-full object-cover"
           src="/divia-showreel.mp4"
@@ -82,15 +82,15 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-6 opacity-80">
-            <div className="w-12 h-px bg-[#C9A84C]" />
+            <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
             <Sparkles size={16} className="text-[#C9A84C]" />
-            <div className="w-12 h-px bg-[#C9A84C]" />
+            <div className="w-8 sm:w-12 h-px bg-[#C9A84C]" />
           </div>
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
+          <h1 className="font-playfair text-4xl sm:text-5xl md:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
             Velvet Bridal<br />
             <em className="text-[#C9A84C]">Makeovers</em>
           </h1>
-          <p className="text-xl md:text-2xl font-light tracking-widest uppercase mb-4 opacity-90">
+          <p className="text-base sm:text-xl md:text-2xl font-light tracking-widest uppercase mb-4 opacity-90">
             Where Every Celebration Begins with Beauty
           </p>
           <p className="text-sm md:text-base tracking-wider opacity-70 mb-10">
@@ -121,7 +121,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="section-divider" />
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#2C1810] mb-4">
+            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-4">
               Every Look, Perfected
             </h2>
             <p className="text-[#2C1810]/60 text-lg max-w-xl mx-auto">
@@ -161,17 +161,17 @@ export default function HomePage() {
       <section className="py-24 px-6 lg:px-12 bg-[#F5E6E0]/40">
         <div className="max-w-5xl mx-auto text-center">
           <div className="section-divider" />
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#2C1810] mb-8">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-8">
             The Artist Behind the Magic
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#2C1810]/75 text-lg leading-relaxed mb-6">
+            <p className="text-[#2C1810]/75 text-base md:text-lg leading-relaxed mb-6">
               Hi, I&apos;m <strong className="text-[#2C1810]">Divia</strong> — a professional makeup and hair artist with a deep passion for South Asian beauty traditions. I believe every celebration deserves a look that&apos;s as unforgettable as the moment itself.
             </p>
-            <p className="text-[#2C1810]/75 text-lg leading-relaxed mb-6">
+            <p className="text-[#2C1810]/75 text-base md:text-lg leading-relaxed mb-6">
               With years of experience in Indian bridal makeovers, I blend timeless tradition with contemporary elegance. Whether you envision a classic bridal look rooted in your heritage or a modern fusion that turns heads, I bring your vision to life — with warmth, precision, and love.
             </p>
-            <p className="text-[#2C1810]/75 text-lg leading-relaxed mb-10">
+            <p className="text-[#2C1810]/75 text-base md:text-lg leading-relaxed mb-10">
               From intimate haldi ceremonies to grand reception galas, every client deserves to feel like the most radiant version of themselves. That&apos;s my promise to you.
             </p>
             <Link href="/book">
@@ -189,7 +189,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <div className="section-divider" />
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#2C1810] mb-4">
+            <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-4">
               Brides Are Saying
             </h2>
           </div>
@@ -224,7 +224,7 @@ export default function HomePage() {
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
             Follow the Journey
           </h2>
-          <p className="text-white/60 text-lg mb-8">
+          <p className="text-white/60 text-base md:text-lg mb-8">
             Catch behind-the-scenes artistry, real bride transformations, and daily beauty inspiration.
           </p>
           <a
@@ -243,10 +243,10 @@ export default function HomePage() {
       <section className="py-24 px-6 lg:px-12 bg-gradient-to-br from-[#F5E6E0] to-[#FEFAF6]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="section-divider" />
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-[#2C1810] mb-6">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-[#2C1810] mb-6">
             Your Dream Look Awaits
           </h2>
-          <p className="text-[#2C1810]/65 text-lg leading-relaxed mb-10">
+          <p className="text-[#2C1810]/65 text-base md:text-lg leading-relaxed mb-10">
             Every celebration deserves to begin with beauty. Let&apos;s create something extraordinary together.
           </p>
           <Link href="/book">

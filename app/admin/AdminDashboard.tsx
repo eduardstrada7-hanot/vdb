@@ -116,7 +116,7 @@ export default function AdminDashboard() {
                   {['Client', 'Event', 'Date', 'Duration', 'Submitted', 'Status', ''].map((h) => (
                     <th
                       key={h}
-                      className="text-left px-6 py-4 text-xs font-semibold uppercase tracking-widest text-[#2C1810]/40"
+                      className="text-left px-3 sm:px-6 py-3 sm:py-4 text-xs font-semibold uppercase tracking-widest text-[#2C1810]/40"
                     >
                       {h}
                     </th>
@@ -129,7 +129,7 @@ export default function AdminDashboard() {
                     key={b.id}
                     className="border-b border-[#F5E6E0]/50 last:border-0 hover:bg-[#FEFAF6]/70 transition-colors"
                   >
-                    <td className="px-6 py-4">
+                    <td className="px-3 sm:px-6 py-2 sm:py-4">
                       <p className="font-semibold text-[#2C1810] text-sm">{b.clientName}</p>
                       <p className="text-[#2C1810]/40 text-xs">{b.clientEmail}</p>
                     </td>
@@ -141,10 +141,10 @@ export default function AdminDashboard() {
                     <td className="px-6 py-4 text-xs text-[#2C1810]/40">
                       {format(new Date(b.createdAt), 'MMM d, h:mm a')}
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-3 sm:px-6 py-2 sm:py-4">
                       <Badge status={b.status} />
                     </td>
-                    <td className="px-6 py-4">
+                    <td className="px-3 sm:px-6 py-2 sm:py-4">
                       <button
                         onClick={() => {
                           setSelected(b)
@@ -167,7 +167,7 @@ export default function AdminDashboard() {
       {selected && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl">
-            <div className="sticky top-0 bg-white border-b border-[#F5E6E0] px-8 py-5 flex items-center justify-between rounded-t-3xl">
+            <div className="sticky top-0 bg-white border-b border-[#F5E6E0] px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between rounded-t-3xl">
               <div>
                 <h3 className="font-playfair text-xl font-semibold text-[#2C1810]">
                   {selected.clientName}
@@ -185,7 +185,7 @@ export default function AdminDashboard() {
               </div>
             </div>
 
-            <div className="px-8 py-6 space-y-4 text-sm">
+            <div className="px-4 sm:px-8 py-4 sm:py-6 space-y-4 text-sm">
               {[
                 ['Email', selected.clientEmail],
                 ['Phone', selected.clientPhone],
@@ -195,7 +195,7 @@ export default function AdminDashboard() {
                 ['Location', selected.eventLocation || '—'],
                 ['Guests', selected.guestCount?.toString() || '—'],
               ].map(([label, value]) => (
-                <div key={label} className="flex justify-between">
+                <div key={label} className="flex justify-between gap-4 flex-wrap">
                   <span className="text-[#2C1810]/40 uppercase tracking-widest text-xs">{label}</span>
                   <span className="text-[#2C1810] font-medium">{value}</span>
                 </div>
@@ -222,7 +222,7 @@ export default function AdminDashboard() {
               </div>
             </div>
 
-            <div className="px-8 pb-8 flex gap-3">
+            <div className="px-4 sm:px-8 pb-4 sm:pb-8 flex gap-2 sm:gap-3">
               <button
                 onClick={() => updateStatus(selected.id, 'approved')}
                 disabled={actionLoading || selected.status === 'approved'}

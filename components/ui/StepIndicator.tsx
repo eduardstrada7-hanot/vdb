@@ -15,7 +15,7 @@ export default function StepIndicator({ steps, currentStep }: StepIndicatorProps
           <div key={step} className="flex items-center">
             <div className="flex flex-col items-center">
               <div
-                className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold transition-all duration-300 ${
+                className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-xs sm:text-sm font-semibold transition-all duration-300 ${
                   isComplete
                     ? 'bg-[#C9A84C] text-white'
                     : isActive
@@ -35,7 +35,7 @@ export default function StepIndicator({ steps, currentStep }: StepIndicatorProps
             </div>
             {index < steps.length - 1 && (
               <div
-                className={`w-16 h-px mx-2 mb-5 transition-all duration-500 ${
+                className={`w-8 sm:w-16 h-px mx-1 sm:mx-2 mb-5 transition-all duration-500 ${
                   stepNum < currentStep ? 'bg-[#C9A84C]' : 'bg-[#F5E6E0]'
                 }`}
               />
