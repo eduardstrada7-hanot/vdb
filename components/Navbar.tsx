@@ -9,7 +9,6 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/book', label: 'Book Now', highlight: true },
-  { href: '/admin', label: 'Admin' },
 ]
 
 export default function Navbar() {
