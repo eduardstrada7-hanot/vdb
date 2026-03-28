@@ -47,7 +47,7 @@ export async function POST(req: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
       from: 'onboarding@resend.dev',
-      to: 'Divyareddyananthula06@gmail.com',
+      to: 'divyareddyananthula06@gmail.com',
       subject: `New Booking Request — ${clientName} (${eventType})`,
       html: `
         <h2>New Booking Request 💄</h2>
