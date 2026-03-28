@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
+import { Resend } from 'resend'
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(req: NextRequest) {
   try {
@@ -39,27 +42,30 @@ export async function POST(req: NextRequest) {
       },
     })
 
-    // Log email (placeholder - configure real SMTP in production)
-    console.log(`
-New Booking Request
-======================
-To: ${clientEmail}
-Subject: Booking Request Received — Velvet Bridal Makeovers
+    const formattedDate = new Date(eventDate + 'T12:00:00').toLocaleDateString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+    })
 
-Hi ${clientName},
-
-Thank you for reaching out to Velvet Bridal Makeovers!
-
-Your booking request has been received. Divya will personally review your request and call you within 48 hours to confirm availability and discuss your look.
-
-Booking Reference: ${booking.id}
-Event: ${eventType}
-Date: ${new Date(eventDate).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
-Duration: ${eventDuration}
-
-Where Every Celebration Begins with Beauty
-— Divya, Velvet Bridal Makeovers
-`)
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'Divyareddyananthula06@gmail.com',
+      subject: `New Booking Request — ${clientName} (${eventType})`,
+      html: `
+        <h2>New Booking Request 💄</h2>
+        <table style="border-collapse:collapse;width:100%;font-family:sans-serif;font-size:14px">
+          <tr><td style="padding:8px;color:#888">Name</td><td style="padding:8px"><strong>${clientName}</strong></td></tr>
+          <tr><td style="padding:8px;color:#888">Email</td><td style="padding:8px">${clientEmail}</td></tr>
+          <tr><td style="padding:8px;color:#888">Phone</td><td style="padding:8px">${clientPhone}</td></tr>
+          <tr><td style="padding:8px;color:#888">Event</td><td style="padding:8px">${eventType}</td></tr>
+          <tr><td style="padding:8px;color:#888">Date</td><td style="padding:8px">${formattedDate}</td></tr>
+          <tr><td style="padding:8px;color:#888">Duration</td><td style="padding:8px">${eventDuration}</td></tr>
+          ${eventLocation ? `<tr><td style="padding:8px;color:#888">Location</td><td style="padding:8px">${eventLocation}</td></tr>` : ''}
+          ${guestCount ? `<tr><td style="padding:8px;color:#888">Guests</td><td style="padding:8px">${guestCount}</td></tr>` : ''}
+          ${notes ? `<tr><td style="padding:8px;color:#888">Notes</td><td style="padding:8px">${notes}</td></tr>` : ''}
+          <tr><td style="padding:8px;color:#888">Booking ID</td><td style="padding:8px;font-family:monospace">${booking.id}</td></tr>
+        </table>
+      `,
+    })
 
     return NextResponse.json({ id: booking.id, status: booking.status }, { status: 201 })
   } catch (error) {
